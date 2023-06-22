@@ -6,12 +6,11 @@ import fetchData from "./fetchData";
 
 type Props = {};
 
-const SearchBar = (props: Props) => {
+const Client = (props: Props) => {
   const [me, setMe] = useState<boolean>(true);
   useEffect(() => {
     const fetchDataAsync = async () => {
       const data = await fetchData();
-      console.log(data);
     };
     fetchDataAsync();
   }, [me]);
@@ -22,4 +21,4 @@ const SearchBar = (props: Props) => {
   );
 };
 
-export default SearchBar;
+export default Client;

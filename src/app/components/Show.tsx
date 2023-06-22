@@ -1,12 +1,12 @@
 import React from "react";
-import SearchBar from "./SearchBar";
+import Client from "./Client";
 
 type Props = {};
 
 const Show = (props: Props) => {
   return (
     <div>
-      <SearchBar />
+      <Client />
     </div>
   );
 };

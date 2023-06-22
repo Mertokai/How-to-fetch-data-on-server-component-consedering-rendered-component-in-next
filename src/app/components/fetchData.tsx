@@ -4,7 +4,6 @@ const fetchData = async () => {
   });
   const data = await persons.json();
   const id = data.id;
-  console.log(id);
   return id;
 };
 
